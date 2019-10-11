@@ -82,7 +82,18 @@ var fairyTale5 = ["daBears", "papaBear", "mamaBear", "babyBear"];
 // "charger" once, and invoke it twice on "mustang".
 
 // CODE HERE...
+function Vehicle(){
+  this.gasRemaining = 100;
+}
+Vehicle.prototype.drive = function(){
+  this.gasRemaining = this.gasRemaining-25;
+}
+let charger = new Vehicle();
+let mustang = new Vehicle();
 
+charger.drive();
+mustang.drive();
+mustang.drive();
 
 
 
